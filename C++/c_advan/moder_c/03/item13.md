@@ -1,0 +1,3 @@
+Item 13:优先考虑const_iterator而⾮iterator
+STL const_iterator等价于指向常量的指针。它们都指向不能被修改的值。标准实践是能加上const就
+加上，这也指⽰我们对待const_iterator应该如出⼀辙。

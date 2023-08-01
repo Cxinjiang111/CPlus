@@ -163,9 +163,16 @@ public:
 
 class Waitress {
 private:
+    vector<MenuItem*> m_menus;
+
+
     DinerMenu* m_dinerMenu;
     PancakeHouseMenu* m_PancakeMenu;
 public:
+    Waitress(vector<MenuItem*> menus)
+    {
+        m_menus = menus;
+    }
     Waitress(DinerMenu* menu,PancakeHouseMenu* rootMenuList)
     {
         this->m_dinerMenu = menu;//拿取菜单资源
@@ -173,11 +180,13 @@ public:
     }
     void printMenu()
     {
-        Iterator_* piteratordiner = m_dinerMenu->creatorIterator();//拿一个临时迭代器
-        printMenu(piteratordiner);
-        std::cout << "================"<<std::endl;
-        Iterator_ *piteatorpanck= m_PancakeMenu->creatorIterator();
-        printMenu(piteatorpanck);
+        //Iterator_ menuIterator= 
+
+        // Iterator_* piteratordiner = m_dinerMenu->creatorIterator();//拿一个临时迭代器
+        // printMenu(piteratordiner);
+        // std::cout << "================"<<std::endl;
+        // Iterator_ *piteatorpanck= m_PancakeMenu->creatorIterator();
+        // printMenu(piteatorpanck);
 
     }
     void printMenu(Iterator_* iterator)

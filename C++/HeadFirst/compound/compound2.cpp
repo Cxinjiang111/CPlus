@@ -3,6 +3,7 @@
 #include<list>
 using namespace std;
 //首先创建quackable接口 实现功能性类
+//    
 class Quackable
 {
 public:
